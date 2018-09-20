@@ -12,7 +12,7 @@
     <h1>Hello {{ controller_name }}! ✅</h1>
 
     {% if file is not null %}
-    <p>{{ file.getClientOriginalName() }}</p>
+    <p>{{ dump(file) }}</p>
     {% endif %}
 
     <form enctype="multipart/form-data" method="POST">
